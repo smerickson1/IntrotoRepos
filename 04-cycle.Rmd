@@ -1,0 +1,46 @@
+---
+title: "The Data Life Cycle"
+---
+![](lifecyclebanner.png) 
+--------------
+
+#### **Goals**: 
+
+* Connect the data life cycle to the scientific method
+* Define the components of the data life cycle 
+
+---------------
+
+#### **Instructors Guide **
+
+Even though not always recognized as such, the data life cycle is an inherent part of the scientific process and only is beginning to be taught as such. Take a look at the steps in the scientific process… What does “experiment” even mean in today’s research arena?
+
+A modern experiment can mean a new evaluations on data collected from other researchers or floating buoys, sensors, or even internet algorithms. Regardless of the experiment type, research is based upon data. Should there be another attempt to replicate said experiment, they would have to reacquire the data for themselves (time and money willing) or ask to use the original set. How do we preserve the integrity of research if we cannot replicate it? The data life cycle.
+ 
+The data life cycle below has eight components. Each step helps the researcher organize, manage, and preserve their data to improve the chances of their data being used effectively by others. 
+
+<div style="background: #ffffff; position: relative; height: 50px; right: 0px; left: 0px;"></div>
+
+<center>
+![](datalifecycle.png){width="50%"}
+</center>
+
+<div style="background: #ffffff; position: relative; height: 50px; right: 0px; left: 0px;"></div>
+
+**Ask students** to complete the [ADC handout, “Describing the Data Life Cycle."](https://drive.google.com/file/d/11qQBd_e1FqAQCSQXtwui8naJXcrF66wG/view?usp=sharing) The [Data One Skillbuiliding Hub](https://dataoneorg.github.io/Education/) is a good resource. Then, discuss and define the components of the data life cycle as a class. 
+
+* Plan: Description of the data that will be compiled, and how the data will be managed and made accessible throughout its lifetime.
+* Collect: observations are made either by hand or with sensors or other instruments and the data are placed a into digital form.
+* Assure: the quality of the data are assured through checks and inspections.
+* Describe: data are accurately and thoroughly described using the appropriate metadata standards.
+* Preserve: data are submitted to an appropriate long-term archive (i.e. data center.
+* Discover: potentially useful data are located and obtained, along with the relevant information about the data (metadata).
+* Integrate: data from disparate sources are combined to form one homogeneous set of data that can be readily analyzed.
+* Analyze: data are analyzed.
+
+---------------
+
+**Optional Additional Materials**
+
+* DataOne: [Introduction to Data Lifecycle](https://old.dataone.org/sites/all/documents/education-modules/handouts/L01_DataManagement_Handout.pdf)
+* DataOne: [Introduction to the Data Management Plan](https://old.dataone.org/sites/all/documents/education-modules/handouts/L03_DataManagement_Handout.pdf)

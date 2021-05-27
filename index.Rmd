@@ -1,0 +1,33 @@
+---
+title: "An Introduction to Data Repositories and Data Management"
+---
+
+<style type="text/css">
+
+h1.title {
+  text-align: center;
+}
+</style>
+=======
+>>>>>>> f59f7968b386d5d9dcf0e10c23f0d92469e64eb5
+
+<div style="background: #FCFFFF; position: relative; height: 100px; right: 0px; left: 0px;"></div>
+<center>
+
+[![](logo-clickme2.png){width=40%}](Landingpage.html)
+
+<div style="background: #FCFFFF; position: relative; height: 25px; right: 0px; left: 0px;"></div>
+
+# **Welcome!**
+
+<div style="background: #FCFFFF; position: relative; height: 15px; right: 0px; left: 0px;"></div>
+
+<<<<<<< HEAD
+=======
+## An Introduction to Data Repositories and Data Management
+
+>>>>>>> f59f7968b386d5d9dcf0e10c23f0d92469e64eb5
+
+<div style="background: #FCFFFF; position: relative; height: 700px; right: 0px; left: 0px;"></div>
+
+#### Brought to you by the [Arctic Data Center](https://arcticdata.io/). 

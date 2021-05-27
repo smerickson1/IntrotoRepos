@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Intorduction to Repositories</title>
+
+<script src="site_libs/header-attrs-2.7/header-attrs.js"></script>
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.tab('show');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Data Repositories +</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="05-overview.html">Overview</a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Lessons
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="04-cylce.html">Data Life Cycle</a>
+    </li>
+    <li>
+      <a href="02-meta.html">Describing Data</a>
+    </li>
+    <li>
+      <a href="01-repo.html">Storing Data</a>
+    </li>
+    <li>
+      <a href="03-cite.html">Citing Data</a>
+    </li>
+  </ul>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="index.html">
+    <span class="fas fa-home"></span>
+     
+  </a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore">Intorduction to Repositories</h1>
+
+</div>
+
+
+<p><img src="banner_repo.png" /></p>
+<hr />
+<div id="goals" class="section level4">
+<h4><strong>Goals</strong>:</h4>
+<ul>
+<li>Define “data repository”</li>
+<li>Explain how repositories are used and and why they are important.</li>
+<li>Understand how data repositories support a culture of open science</li>
+</ul>
+<hr />
+</div>
+<div id="instructors-guide" class="section level4">
+<h4><strong>Instructors Guide </strong></h4>
+<p><a href="https://docs.google.com/presentation/d/1zLSrdq8cbPZgyfmctebp4hTohp3asbItm5DXeDN6pFI/edit?usp=sharing">View the slides here.</a></p>
+<p>Introduce the lesson and <strong>ask students,</strong> what are data?</p>
+<p>For reference:</p>
+<ul>
+<li><p>Wikipedia - Data are characteristics or information, usually numerical, that are collected through observation.[1] In a more technical sense, data is a set of values of qualitative or quantitative variables about one or more persons or objects, while a datum (singular of data) is a single value of a single variable. [2]</p></li>
+<li><p>MerriamWebster - Factual information (such as measurements or statistics) used as a basis for reasoning, discussion, or calculation
+Tech terms - Computer data is information processed or stored by a computer. This information may be in the form of text documents, images, audio clips, software programs, or other types of data.</p></li>
+<li><p>Dictionary.com - A plural of datum. Datum: A single piece of information, as a fact, statistic, or code; an item of data. In Philosophy 1) any fact assumed to be a matter of direct observation. 2) Any proposition assumed or given, from which conclusions may be drawn.</p></li>
+</ul>
+<hr />
+<p><strong>Ask students</strong> to provide examples of data from their daily life or from their own course work.</p>
+<p>The world today is filled with science news, from climate change to hurricanes – and it all affects the people inhabiting the earth. The label “data” is all-encompassing and can be categorized in several ways. These graphics help us classify types of data.</p>
+<hr />
+<p><strong>Ask students</strong> to think of some data related to any of these categories. Then to try and define a data repository.</p>
+<p>Some leading questions:</p>
+<ul>
+<li>Libraries store books, repositories store ____.</li>
+<li>Where does data go?</li>
+<li>What is the “cloud”?</li>
+</ul>
+<p>The amount of available storage is not keeping up with the amount of data flooding in daily. How do we decide what data we keep?</p>
+<hr />
+<p><strong>Ask students</strong> to discuss where data from research seem to end up. Since we already introduced repositories in the earlier slide, this question is not necessarily meant to reinforce the concept. Rather, what we want the students to get at is where do they think data from research typically goes and how does that fit into the scientific process.</p>
+<p>Because researchers require time to verify data, analyze their data, and derive research conclusions, individual researchers generally are not expected to make all their data public immediately.</p>
+<p>New tools for automatically assessing the quality of data and sharing them with others can facilitate the rapid sharing of digital data, although verifying the reliability of these tools presents its own set of challenges.</p>
+<p>Once a research result is published, the norms of science—and often the terms of the research grant or contract—call for the supporting data to be accessible.</p>
+<p>Researchers may nevertheless try to keep the data private, perhaps to derive additional results without competition from others, for the exclusive use of a student or postdoctoral fellow whose career would be advanced by generating further papers, or just to avoid the effort to put the data in a usable form for others. In the worst cases, they may retain data to hide acts of research misconduct or to conceal defects in the dataset.</p>
+<p>Sometimes researchers may want to keep the data private just out of respect for the type of data collected. Some data contains sensitive information such as people’s names, racial or ethnic origin, political opinions, religious or philosophical beliefs.</p>
+<p>The norms of a research community may allow keeping data private for a certain period. These norms can be formalized through the terms of a grant-giving the investigator a defined period of exclusive use of the data, with the exclusivity ending upon the publication of results, after a particular length of time, or when data are deposited in a data center or archive.</p>
+<p>There is great variation among research fields in their data-sharing norms, to such an extent that different fields can be said to have different data cultures.</p>
+<p>Given the numerous ways data can be lost and thereby irrevocably damage the integrity and reproducibility of the associated research, this is exactly why researchers should have a plan in mind for their data.</p>
+<hr />
+<p>Let’s circle back to repositories now that we’ve explained the potential “why” for their use. Repositories have become a significant component of the infrastructure for research data. A repository is both a system and set of services designed as an archive for digital data with context, fixity, and persistence. In addition to data, repositories maintain and preserve metadata.</p>
+<p><strong>Ask students</strong> to find a data repository online in groups then share their findings with the class.</p>
+<p>Good starting point <a href="https://www.nsf.gov/geo/oce/oce-data-sample-repository-list.jsp">here</a> or <a href="http://re3data.org/">here</a>.</p>
+<p>Key objectives from the activity:</p>
+<ul>
+<li>Develop an understanding for how diverse repositories are</li>
+<li>Practice finding a repository for different data types</li>
+</ul>
+<p>While we might have come up with what a repository is as a class, now take a moment to explicitly define the uses of data repository.</p>
+<p>Data repositories provide:</p>
+<ul>
+<li>Easy information discovery<br />
+</li>
+<li>Easy and efficient access<br />
+</li>
+<li>More exposure and amplify impact<br />
+</li>
+<li>Persistent access (through persistent URL)<br />
+</li>
+<li>Long-term storage and preservation</li>
+</ul>
+<hr />
+<p>Now that we have established why using a repository is important, we want to then tie this into the philosophy of open science.</p>
+<p>Open science is the movement to make scientific research and data accessible to all. In many ways, the reasons why we should store scientific data in a repository are the same reasons why we should embrace the culture of open science.</p>
+<p><img src="openscigraphic.jpg" /></p>
+<p><strong>Optional Additional Materials</strong></p>
+<ul>
+<li>Video on <a href="https://www.youtube.com/watch?v=3m6p6w8oOw4">Open Science</a> (4 minutes)</li>
+<li>TedTalk, “<a href="https://www.youtube.com/watch?v=uPtP6-nAjJ0">Open Science can save the world</a>” (13 minutes)</li>
+<li>ACRL Presents: <a href="https://www.youtube.com/watch?v=xaAh4PfPdRs">Open Data Repositories-Creating Equitable and Sustainable Data Access</a> (50 minutes)</li>
+</ul>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

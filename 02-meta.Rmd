@@ -1,0 +1,48 @@
+---
+title: "Metadata"
+---
+
+![](bannermeta.png)
+
+--------------
+
+#### **Goals**: 
+
+- Define metadata
+- Examine information included in a metadata record
+- Illustrate the value and utility of metadata to data users, data providers, and organizations
+- Write a quality metadata record
+
+--------------
+
+#### **Instructors Guide**
+
+[View the slides here.](https://docs.google.com/presentation/d/1e2M0adq6gGRsI0Q5H8Zt5chLYfOZX112GbD-OqjrqI0/edit?usp=sharing)
+
+As we discussed in lesson one, well-managed data can result in re-use, integration, and new science. But data is not insular. In order to create quality data, key components of good data (well-organized, documented, preserved, accessible, verifiable) are inherently associated with well-kept records of this data. In the data life cycle, describing data is a fundamental part of data management. 
+
+Metadata are documentation describing the content, context, and structure of data to enable future interpretation and reuse of the data. Generally, metadata describe who collected the data, what data were collected, when and where they were collected, and why they were collected.
+
+Metadata serves data discovery at multiple levels:
+
+* Initial identification by query of keywords, location, time, and attributes
+* A quick assessment can be made by the scientist as to how useful the data are for a project by reading the access and use constraints; data quality measures of positional and attribute accuracy and sources used; and statements as to data availability, format and pricing.
+* A user can find out how to access the by reading access instructions, any standard order process instructions, and contact information for the dataset.
+
+--------------
+
+**Ask students** to find a dataset in the Arctic Data Center repository. They can search by location or by keyword – or you can use [this dataset](https://arcticdata.io/catalog/view/doi%3A10.18739%2FA24T6F391) about the phenological mismatch in the Arctic. 
+
+**Ask students** to find and record key metadata such as the title, abstract, dataset creator, author, and location.
+
+Finally, in groups, **ask students** to dissect a paper such as [this one on snow melt](https://onlinelibrary.wiley.com/doi/epdf/10.1111/gcb.15193) or [this one on how pollution affects Arctic cloud development](https://doi.org/10.1029/2018GL079873). Have them highlight or underline the parts of the paper that would be entered into a repository as metadata. Next, ask the students to compare that with how the data was actually stored at the Arctic Data Center by viewing the citation at the bottom of the paper. Discuss differences. 
+
+---------------
+
+**Optional Additional Materials**
+
+* [Understanding Metadata](https://groups.niso.org/apps/group_public/download.php/17446/Understanding%20Metadata.pdf) by NISO, National Information Standards Organization
+* DataOne [Introduction to MetaData](https://old.dataone.org/sites/all/documents/education-modules/handouts/L07_DefiningMetadata_Handout.pdf) and [Handout](https://old.dataone.org/sites/all/documents/education-modules/exercises/L07_Exercise.pdf)
+* [Paper, “Maximizing the Value of Ecological Data with Structured Metadata: An Introduction to Ecological Metadata Language (EML) and Principles for Metadata Creation”](https://esajournals.onlinelibrary.wiley.com/doi/abs/10.1890/0012-9623%282005%2986%5B158%3AMTVOED%5D2.0.CO%3B2)
+* [Arctic Data Center Training 5.4 MetaData](http://training.arcticdata.io/materials/arctic-data-center-training/data-documentation-and-publishing.html#metadata) or [Arctic Data Center Training Slides, Data and MetaData Submission](http://training.arcticdata.io/materials/arctic-data-center-training/03-best-practices-data-metadata.pdf)
+

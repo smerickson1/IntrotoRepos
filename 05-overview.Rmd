@@ -1,0 +1,44 @@
+---
+title: "Module Overview"
+output: html_document2
+toc: false
+---
+
+![](banner1.png)
+<div style="background: #ffffff; position: relative; height: 25px; right: 0px; left: 0px;"></div>
+
+#### The lesson materials associated with this are not specific to any particular course, and therefore can be used in a variety of classrooms such as environmental science, data science, ecology, or marine science courses. Introducing students to data repositories at the undergraduate level may open up a new world of research and learning opportunities for them now or as future scientists.
+<div style="background: #ffffff; position: relative; height: 25px; right: 0px; left: 0px;"></div>
+**Target Audience**: Undergraduate students
+<div style="background: #ffffff; position: relative; height: 25px; right: 0px; left: 0px;"></div>
+**Target Course(s)**: Ecology, biology, environmental sciences, resource management, statistics, data science, atmospheric sciences, GIS, sustainability, geology, sociology, chemistry, evolution, or similar
+<div style="background: #ffffff; position: relative; height: 25px; right: 0px; left: 0px;"></div>
+**Background knowledge needed**: None
+<div style="background: #ffffff; position: relative; height: 25px; right: 0px; left: 0px;"></div> 
+**Prep Time**: 30 minutes
+<div style="background: #ffffff; position: relative; height: 25px; right: 0px; left: 0px;"></div> 
+**Lesson Duration**: 2-3 hours
+<div style="background: #ffffff; position: relative; height: 25px; right: 0px; left: 0px;"></div> 
+**Objectives**: By the end of this lesson, students will be able to….
+
+* Understand what a data repository is and why it is used
+* Connect how data storage fits into the data life cycle
+* Become familiar with basic data collection methods and their affiliated file formats
+* Find and download data from the Arctic Data Center
+* Learn what metadata is and why it’s important
+* Explain what open data is and why it is important for reproducibility
+<div style="background: #ffffff; position: relative; height: 25px; right: 0px; left: 0px;"></div> 
+
+**Learned skills**:
+ 
+* Finding the appropriate repository for different types of data and disciplines  
+* Navigating a repository and understanding general data science terminology
+* Creating a data management plan
+<div style="background: #ffffff; position: relative; height: 25px; right: 0px; left: 0px;"></div> 
+
+**Course Format**: 
+
+This module is meant to be taught within the timeframe of one lab period (or approximately 2 hours in length). Included in this lesson is an introductory video and prepared PowerPoint with time allotted for exploration into the Arctic Data Center’s repository and completion of an in-class assignment. Instructors may want to assign students additional out of classwork, or use additional modules to round out a full unit.
+<div style="background: #ffffff; position: relative; height: 25px; right: 0px; left: 0px;"></div> 
+
+**Suggested readings**: There are no required readings for this course, but feel free to recommend this introductory paper, “[Skills and Knowledge for Data-Intensive Environmental Research](https://academic.oup.com/bioscience/article/67/6/546/3784601?login=true)”.
